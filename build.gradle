@@ -1,0 +1,29 @@
+plugins {
+	id 'java-library'
+}
+
+sourceSets {
+	main {
+		java {
+			srcDirs = ["src"]
+		}
+	}
+	test {
+		java {
+			srcDirs = ["test"]
+		}
+	}
+}
+
+ext.gdxVersion = "1.9.10"
+version = "1.0"
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	implementation "com.badlogicgames.gdx:gdx:$gdxVersion"
+	testImplementation "com.badlogicgames.gdx:gdx-backend-lwjgl:$gdxVersion"
+	testImplementation "com.badlogicgames.gdx:gdx-platform:$gdxVersion:natives-desktop"
+}
