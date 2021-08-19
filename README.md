@@ -6,6 +6,6 @@ repositories {
     maven { url "https://jitpack.io" }
 }
 dependencies {
-     implementation 'com.github.jitpack:gradle-simple:1.0'
+     implementation 'com.github.hdcokie1:InputX:1.0'
 }
 ```
